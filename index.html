@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  </head>
+
+
+  <body>
+   
+    <header class="bg-primary lg:px-[4rem] py-2.5 px-[1rem] z-10">
+      <nav class="flex justify-between items-center w-full z-10">
+          <div class="h-[3.8rem] w-[9rem]">
+              <img class="w-full h-full cursor-pointer" src="./images/logo.jpeg" alt="...">
+          </div>
+          <div
+              class="z-10 nav-links duration-500 md:static absolute  md:min-h-fit min-h-[40vh] mt-[.25rem] left-[-.01rem] w-full top-[4.7rem] hidden md:block md:w-auto flex items-center bg-primary pl-[1rem] pr-[3rem]">
+              <ul class="z-10 flex md:flex-row flex-col md:items-center gap-[2rem] lg:gap-[2rem] md:gap-[1rem]  text-white">
+                  <li>
+                      <a href="./index.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">Home</a>
+                  </li>
+                  <li class="">
+                      <a href="./about.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">About</a>
+                  </li>
+                  <li class="">
+                    <a href="./Products.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">Products</a>
+                </li>
+                  <li>
+                      <a href="./ContactUs.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">Contact Us</a>
+                  </li>
+                 
+              </ul>
+          </div>
+       
+              <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+  </header>
+   
+ 
+    <!-- ......... CAROUSEL SECTION........ -->
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="./images/img-5.jpg" alt="Slide 1" />
+          <div class="carousel-content">
+           
+            <p class="sm:text-xl font-medium">
+              Wires That Weave Trust: Delivering Quality Connections Every Time.
+            </p>
+            <!-- <button class="carousel-btn mt-8">Know More</button> -->
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="./images/img-6.jpg" alt="Slide 2" />
+          <div class="carousel-content">
+            
+            <p class="sm:text-xl font-medium">
+              Wiring the Future: Where Quality Meets Performance.
+            </p>
+            <!-- <button class="carousel-btn mt-8">Know More</button> -->
+
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="./images/img-7.jpg" alt="Slide 3" />
+          <div class="carousel-content">
+            <p class="sm:text-xl font-medium">
+              From Our House to Yours: Ensuring Safety and Quality in Every Wire.
+            </p>
+            <!-- <button class="carousel-btn mt-8">Know More</button> -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button class="carousel-prev">&lt;</button>
+      <button class="carousel-next">&gt;</button>
+    </div>
+    <!-- ......... CAROUSEL SECTION ENDED........ -->
+
+    <!-- .......IDEAL CHOICE SECTION............  -->
+
+    <div
+      class="flex flex-col  gap-[3rem] my-[3rem] text-center "
+    >
+      <div class="w-[60%] sm:w-[60%] mx-auto">
+        <h1 class="font-bold text-3xl text-secondary">
+          Discover Why We're Your Ideal Choice.
+        </h1>
+       
+      </div>
+      <div class="md:mx-[2rem] lg:mx-[4rem] xl:mx-[8rem] flex justify-center lg:justify-between items-center gap-[3rem]  flex-col lg:flex-row">
+        
+        <div class="flex w-full flex-col gap-[2rem] ">
+          <div class="flex gap-[2rem] flex-col md:flex-row justify-evenly items-center">
+            <div
+              class="ideal flex flex-col justify-center gap-[1rem]  items-center w-[80%] lg:w-[40%] max-h-auto  min-h-[12rem] px-[1.5rem] md:py-[1rem] py-0"
+            >
+             
+
+              <h1 class="font-bold text-2xl text-secondary">Fireproof Technology:</h1>
+              <p>
+                Safety is our top priority, which is why all our house wires are
+equipped with state-of-the-art fireproof technology.
+              </p>
+            </div>
+            <div
+              class="ideal flex flex-col justify-center gap-[1rem]  items-center w-[80%] lg:w-[40%] max-h-auto min-h-[12rem] px-[1.5rem] md:py-[1rem] py-0"
+            >
+            
+              <h1 class="font-bold text-2xl text-secondary">Premium Quality Copper:</h1>
+              <p>
+                We believe in using only the finest materials in our products,
+                which is why we source high-quality copper for our house wires.
+              </p>
+            </div>
+          </div>
+          <div class="flex  gap-[2rem] flex-col md:flex-row justify-evenly items-center">
+            <div
+              class="ideal flex flex-col justify-center gap-[1rem]  items-center w-[80%] lg:w-[40%] max-h-auto min-h-[12rem] px-[1.5rem] md:py-[1rem] py-0"
+            >
+             
+              <h1 class="font-bold text-2xl text-secondary">Full Copper Gauge (0.3mm):</h1>
+              <p>
+                When it comes to quality, every detail matters. That&#39;s why our
+                house wires boast a full copper gauge of 0.3mm, ensuring maximum efficiency and reliability
+                in electrical installations.
+              </p>
+            </div>
+            <div
+              class="ideal flex flex-col justify-center gap-[1rem]  items-center w-[80%] lg:w-[40%] max-h-auto  min-h-[12rem] px-[1.5rem] md:py-[1rem] py-0"
+            >
+             
+
+              <h1 class="font-bold text-2xl text-secondary">Export Quality Assurance</h1>
+              <p>
+                Our commitment to excellence knows no borders. As advocates for quality craftsmanship, we adhere to rigorous export quality standards, ensuring that our house wires meet and exceed the expectations of customers worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .......IDEAL CHOICE SECTION............  -->
+
+
+
+    <!-- ..........our products.................  -->
+
+    <div class="container-s swiper mt-[5rem] mb-[3rem]">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide text-center">
+            <div class="image-box">
+              <img src="./images/img-6.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+                <h3 class="name">Bunched wire</h3>
+            </div>
+          </div>
+          <div class="card swiper-slide text-center">
+            <div class="image-box">
+              <img src="./images/img-7.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+                <h3 class="name">Annealed wire</h3>
+            </div>
+          </div>
+          <div class="card swiper-slide text-center">
+            <div class="image-box">
+              <img src="./images/img-7.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+                <h3 class="name">Building wire</h3>
+            </div>
+          </div>
+          <div class="card swiper-slide text-center">
+            <div class="image-box">
+              <img src="./images/img-5.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+                <h3 class="name">Earthing wire</h3>
+            </div>
+          </div>
+          <div class="card swiper-slide text-center">
+            <div class="image-box">
+              <img src="./images/img-3.jpeg" alt="" />
+            </div>
+            <div class="profile-details">
+                <h3 class="name">Hard drawn wire</h3>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination bottom-[3px]"></div>
+    </div>
+
+
+    <!-- .......FOOTER SECTION............  -->
+    <div class="footer flex md:justify-evenly flex-col md:flex-row justify-center items-center  md:h-[23rem] pt-[4rem] h-auto">
+      <div class="contact-section w-[20rem] text-center md:text-justify">
+        <h3 class="font-medium text-2xl">About us</h3>
+        <p class="pt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum.
+        </p>
+        <div class="footer-icons">
+          <a href="" class="flex gap-[1.5rem] text-2xl justify-center md:justify-start  mt-4">
+            <span><i class="fa-brands fa-facebook bg-white text-primary rounded-sm px-1 py-1  hover:text-blue-500"></i></span>
+            <span><i class="fa-brands fa-twitter bg-white text-primary rounded-sm px-1 py-1 hover:text-blue-500"></i></span>
+            <span><i class="fa-brands fa-instagram bg-white text-primary rounded-sm px-1.5 py-1 hover:text-blue-500"></i></span>
+            <span><i class="fa-brands fa-pinterest-p bg-white text-primary rounded-sm px-[7px] py-1 hover:text-blue-500"></i></span>
+          </a>
+        </div>
+      </div>
+  
+      <div class="contact-section flex flex-col text-center md:text-justify gap-2 mt-5 md:m-0">
+        <h3 class="font-medium text-2xl text-white md:pb-3">Quick links</h3>
+        <p><a href="./index.html" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Home</a></p>
+        <p><a  href="./about.html" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">About Us</a></p>
+        <p><a href="./Products.html" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Our Products</a></p>
+       
+        
+      </div>
+  
+      <div class="contact-section flex flex-col gap-2 text-center md:text-justify  mt-5 md:m-0">
+        <h3 class="font-medium text-2xl text-white md:pb-3">Our Service</h3>
+  
+        <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">About Us</a></p>
+        <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Our Portfolio</a></p>
+        <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Pricing Plan</a></p>
+      
+      </div>
+      <div class="contact-section text-white flex flex-col gap-2 text-center md:text-justify  mt-5 md:m-0">
+        <h3 class="font-medium text-2xl text-white md:pb-3">Contact</h3>
+  
+        <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">A-21 Ram Nagar Ex,
+          Jaipur</a></p>
+        <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">shreeratanind@gmail.com</a></p>
+        <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">+91 9001979560</a></p>
+       
+      </div>
+    </div>
+   
+
+<script src="./js/script.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiperScript.js"></script>
+
+  </body>
+</html>

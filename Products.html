@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/style.css" />
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<style>
+  .table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+</style>
+
+<body>
+    <header class="bg-primary lg:px-[4rem] py-2.5 px-[1rem] z-10">
+        <nav class="flex justify-between items-center w-full z-10">
+            <div class="h-[3.8rem] w-[9rem]">
+                <img class="w-full h-full cursor-pointer" src="./images/logo.jpeg" alt="...">
+            </div>
+            <div
+                class="z-10 nav-links duration-500 md:static absolute  md:min-h-fit min-h-[40vh] mt-[.25rem] left-[-.01rem] w-full top-[4.7rem] hidden md:block md:w-auto flex items-center bg-primary pl-[1rem] pr-[3rem]">
+                <ul class="z-10 flex md:flex-row flex-col md:items-center gap-[2rem] lg:gap-[2rem] md:gap-[1rem]  text-white">
+                    <li>
+                        <a href="./index.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="./about.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">About</a>
+                    </li>
+                    <li class="">
+                      <a href="./Products.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">Products</a>
+                  </li>
+                    <li>
+                        <a href="./ContactUs.html" class="hover:bg-white hover:text-primary rounded-md px-[.8rem] text-xl lg:text-xl md:text-lg py-1" href="#">Contact Us</a>
+                    </li>
+                   
+                </ul>
+            </div>
+         
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+    </header>
+    
+
+
+    <div class="contact-img">
+        <a class="text-white underline-on-hover bg-secondary p-[1rem_2rem] rounded-md text-3xl font-bold relative">Our Products</a>
+    </div>
+    
+
+ <!-- ...........PRODUCTS TABLES...........  -->
+
+ <!-- <div class="overflow-x-auto my-[2rem] mx-[9.6rem] rounded">
+  <table class="min-w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="bg-blue-300">
+        <th class="py-2 px-4 border-b">Nominal Area of Conductor (Sq.mm)</th>
+        <th class="py-2 px-4 border-b">Number/Nominal Dia. of Strands</th>
+        <th class="py-2 px-4 border-b">Approx.Overall Dia.(mm)</th>
+        <th class="py-2 px-4 border-b">In conduit/Trunking Amps</th>
+        <th class="py-2 px-4 border-b">Clipped direct to a surface or on cable tray and unenclosed.Amps</th>
+        <th class="py-2 px-4 border-b">DC Conductor Resistance at 200C (Max.) /Km</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center">
+        <td class="py-2 px-4 border-b">0.75</td>
+        <td class="py-2 px-4 border-b">11/0.3</td>
+        <td class="py-2 px-4 border-b">2.4</td>
+        <td class="py-2 px-4 border-b">9</td>
+
+        <td class="py-2 px-4 border-b">10</td>
+
+        <td class="py-2 px-4 border-b">26.1</td>
+      </tr>
+      <tr class="bg-gray-200 text-center">
+        <td class="py-2 px-4 border-b">1.0</td>
+        <td class="py-2 px-4 border-b">14/0.3</td>
+        <td class="py-2 px-4 border-b">2.7</td>
+        <td class="py-2 px-4 border-b">15</td>
+
+        <td class="py-2 px-4 border-b">15</td>
+
+        <td class="py-2 px-4 border-b">18.3</td>
+      </tr>
+      <tr class="text-center">
+        <td class="py-2 px-4 border-b">1.5</td>
+        <td class="py-2 px-4 border-b">22/0.3</td>
+        <td class="py-2 px-4 border-b">3.1</td>
+        <td class="py-2 px-4 border-b">17</td>
+
+        <td class="py-2 px-4 border-b">19</td>
+
+        <td class="py-2 px-4 border-b">12.2</td>
+      </tr>
+      <tr class="bg-gray-200 text-center">
+        <td class="py-2 px-4 border-b">2.5</td>
+        <td class="py-2 px-4 border-b">36/0.3</td>
+        <td class="py-2 px-4 border-b">3.8</td>
+        <td class="py-2 px-4 border-b">22</td>
+
+        <td class="py-2 px-4 border-b">25</td>
+
+        <td class="py-2 px-4 border-b">7.43</td>
+
+        
+      </tr>
+      <tr class=" text-center">
+        <td class="py-2 px-4 border-b">4.0</td>
+        <td class="py-2 px-4 border-b">56/0.3</td>
+        <td class="py-2 px-4 border-b">4.2</td>
+        <td class="py-2 px-4 border-b">27</td>
+
+        <td class="py-2 px-4 border-b">31</td>
+
+        <td class="py-2 px-4 border-b">4.97</td>
+
+        
+      </tr>
+      <tr class="bg-gray-200 text-center">
+        <td class="py-2 px-4 border-b">6.0</td>
+        <td class="py-2 px-4 border-b">84/0.3</td>
+        <td class="py-2 px-4 border-b">4.7</td>
+        <td class="py-2 px-4 border-b">34</td>
+
+        <td class="py-2 px-4 border-b">39</td>
+
+        <td class="py-2 px-4 border-b">3.31</td>
+
+        
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<div class="table-responsive w-[100%] md:w-[80%] m-auto my-[3rem] ">
+  <table class=" bg-white border border-black">
+    <thead>
+      <tr class="bg-blue-300">
+        <th class="py-4 h-[6rem] md:h-auto border border-black">Nominal Area of Conductor (Sq.mm)</th>
+        <th class="py-4 h-[6rem] md:h-auto  border border-black">Number/Nominal Dia. of Strands</th>
+        <th class="py-4 h-[6rem] md:h-auto  border border-black">Approx.Overall Dia.(mm)</th>
+        <th class="py-4 h-[6rem] md:h-auto border border-black">In conduit/Trunking Amps</th>
+        <th class="py-4 h-[6rem] md:h-auto  border border-black">Clipped direct to a surface or on cable tray and unenclosed.Amps</th>
+        <th class="py-4 border border-black">DC Conductor Resistance at 200C (Max.) /Km</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center">
+        <td class="py-2  border border-black">0.75</td>
+        <td class="py-2  border border-black">11/0.3</td>
+        <td class="py-2  border border-black">2.4</td>
+        <td class="py-2  border border-black">9</td>
+        <td class="py-2  border border-black">10</td>
+        <td class="py-2  border border-black">26.1</td>
+      </tr>
+      <tr class="bg-gray-200 text-center">
+        <td class="py-2  border border-black">1.0</td>
+        <td class="py-2  border border-black">14/0.3</td>
+        <td class="py-2  border border-black">2.7</td>
+        <td class="py-2  border border-black">15</td>
+        <td class="py-2  border border-black">15</td>
+        <td class="py-2  border border-black">18.3</td>
+      </tr>
+      <tr class="text-center">
+        <td class="py-2  border border-black">1.5</td>
+        <td class="py-2  border border-black">22/0.3</td>
+        <td class="py-2  border border-black">3.1</td>
+        <td class="py-2  border border-black">17</td>
+        <td class="py-2  border border-black">19</td>
+        <td class="py-2  border border-black">12.2</td>
+      </tr>
+      <tr class="bg-gray-200 text-center">
+        <td class="py-2  border border-black">2.5</td>
+        <td class="py-2  border border-black">36/0.3</td>
+        <td class="py-2  border border-black">3.8</td>
+        <td class="py-2  border border-black">22</td>
+        <td class="py-2  border border-black">25</td>
+        <td class="py-2  border border-black">7.43</td>
+      </tr>
+      <tr class="text-center">
+        <td class="py-2  border border-black">4.0</td>
+        <td class="py-2  border border-black">56/0.3</td>
+        <td class="py-2  border border-black">4.2</td>
+        <td class="py-2  border border-black">27</td>
+        <td class="py-2  border border-black">31</td>
+        <td class="py-2  border border-black">4.97</td>
+      </tr>
+      <tr class="bg-gray-200 text-center">
+        <td class="py-2  border border-black">6.0</td>
+        <td class="py-2  border border-black">84/0.3</td>
+        <td class="py-2  border border-black">4.7</td>
+        <td class="py-2  border border-black">34</td>
+        <td class="py-2  border border-black">39</td>
+        <td class="py-2  border border-black">3.31</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+   <div class="w-[80%] mx-auto my-[3rem] border-2 shadow shadow-secondary rounded-lg overflow-hidden">
+    <div class="h-[20rem] w-[100%]">
+        <img src="./images/img-6.jpg" class="w-full h-full object-fill" alt="">
+    </div >
+    <div class="p-8 text-center">
+        <h2 class="heading-hover font-bold text-2xl ">Building Wires</h2>
+        <p class="pt-4">The most common material for building wires due to its superior conductivity, flexibility, and reliability. Copper wires are less prone to corrosion and are highly durable. While less conductive than copper, aluminum is lighter and less expensive. It is often used in large cables for service entrance and feeders. Special care must be taken to prevent oxidation and ensure proper connections.</p>
+    </div>
+   </div>
+   
+   <div class="w-[80%] mx-auto my-[3rem] border-2 shadow shadow-secondaryrounded-lg overflow-hidden">
+    <div class="h-[20rem] w-full">
+        <img src="./images/bunched wires.jpg" class="w-full h-full  object-bottom" alt="">
+    </div >
+    <div class="p-8 text-center">
+        <h2 class="heading-hover font-bold text-2xl ">Bunched Wire</h2>
+        <p class="pt-4"> Bunched wire is more flexible than solid wire, making it ideal for applications where the wire must bend and twist without breaking. The multiple strands provide resilience against physical stress and vibration, enhancing the wire's longevity.The surface area of bunched wire is greater than that of a solid wire, which can improve electrical conductivity slightly and reduce skin effect in high-frequency applications.
+
+        </p>
+    </div>
+   </div>
+
+   <div class=" w-[80%] mx-auto my-[3rem] border-2 shadow shadow-secondary rounded-lg overflow-hidden">
+    <div class="h-[20rem] w-full">
+        <img src="./images/img-7.jpg" class="w-full h-full" alt="">
+    </div >
+    <div class="p-8 text-center">
+        <h2 class="heading-hover font-bold text-2xl ">Annealed Wire</h2>
+        <p class="pt-4">Annealed wire is a type of wire that has undergone an annealing process, a heat treatment that softens the metal, enhancing its ductility and reducing its hardness. This process involves heating the wire to a specific temperature and then slowly cooling it, which alters its physical and mechanical properties, making it more pliable and easier to work with.: Annealed wire is softer compared to other types of wire, making it easier to handle and manipulate.</p>
+    </div>
+   </div>
+   <div class="w-[80%] mx-auto my-[3rem] border-2 shadow shadow-secondary rounded-lg overflow-hidden">
+    <div class="h-[20rem] w-full">
+        <img src="./images/img-5.jpg" class="w-full h-full object-cover" alt="">
+    </div >
+    <div class="p-8 text-center">
+        <h2 class="heading-hover font-bold text-2xl ">Hard Drawn Wire</h2>
+        <p class="pt-4">Hard drawn wire is a type of steel wire that has been cold drawn through a die to achieve a specific diameter and enhanced mechanical properties. This process, known as work hardening, increases the wire's tensile strength and hardness by deforming the metal's structure without the application of heat. The cold drawing process significantly increases the wire's tensile strength, making it suitable for applications that require strong and durable wire.</p>
+    </div>
+   </div>
+   <div class="w-[80%] mx-auto my-[3rem] border-2 shadow shadow-secondary rounded-lg overflow-hidden">
+    <div class="h-[20rem] w-full">
+        <img src="./images/img-6.jpg" class="w-full h-full" alt="">
+    </div >
+    <div class="p-8 text-center">
+        <h2 class="heading-hover font-bold text-2xl ">Earthing Wire</h2>
+        <p class="pt-4">Earthing wire, also known as grounding wire, is an essential component in electrical systems designed to safely dissipate electrical currents into the earth. This provides a reference potential for the electrical system and helps protect against electrical shocks, surges, and potential fire hazards.Earthing wires are typically made of materials with excellent electrical conductivity, such as copper or aluminum, to ensure efficient grounding.</p>
+    </div>
+   </div>
+
+
+
+   <div
+   class="flex flex-col lg:flex-row justify-center md:justify-between  md:items-center gap-[2.5rem] w-[80%] lg:w-[90%] xl:w-[80%] m-auto my-[2rem]"
+ >
+   <div
+     class="wires-details text-black bg-gradient-to-r from-blue-300 to-blue-100 rounded p-[2rem_2rem] h-[14rem] md:w-[30rem] lg:w-[50rem] xl:h-[16rem] lg:h-[18rem] flex flex-col gap-[.7rem]"
+   >
+     <h3 class="font-bold text-xl">Superior Conductivity</h3>
+     <p class="font-medium">
+      Copper wire's conductivity is unmatched. It efficiently transmits electricity, minimizing energy loss. This makes it ideal for various applications, ensuring swift and reliable power delivery.
+     </p>
+   </div>
+   <div
+     class="wires-details text-black bg-gradient-to-r from-blue-300 to-blue-100 rounded p-[2rem_2rem] h-[14rem] md:w-[30rem] lg:w-[50rem] lg:h-[18rem] xl:h-[16rem] flex flex-col gap-[.7rem]"
+   >
+     <h3 class="font-bold text-xl">Exceptional Durability</h3>
+     <p class="font-medium">
+      Copper wire stands out for its remarkable resilience. Resistant to corrosion, it thrives even in harsh conditions, ensuring long-lasting performance. 
+     </p>
+   </div>
+   <div
+     class="wires-details text-black bg-gradient-to-r from-blue-300 to-blue-100 rounded p-[2rem_2rem] h-[14rem] md:w-[30rem] lg:w-[50rem] lg:h-[18rem] xl:h-[16rem] flex flex-col gap-[.7rem]"
+   >
+     <h3 class="font-[650] text-xl">Thermal Efficiency</h3>
+     <p class="font-medium">
+      Copper wire excels in dissipating heat, maintaining system stability. Its high thermal conductivity prevents overheating, enhancing the lifespan of electrical components. 
+   </div>
+   <div
+     class="wires-details text-black bg-gradient-to-r from-blue-300 to-blue-100 rounded p-[2rem_2rem] h-[14rem] md:w-[30rem] lg:w-[50rem] lg:h-[18rem] xl:h-[16rem] flex flex-col gap-[.7rem]"
+   >
+     <h3 class="font-[650] text-xl">Cost-Effectiveness</h3>
+     <p class="font-medium">
+      Despite its premium performance, copper wire remains cost-effective due to its long lifespan and low maintenance requirements. 
+     </p>
+   </div>
+ </div>
+
+
+   <!-- .......FOOTER SECTION............  -->
+   <div class="footer flex md:justify-evenly flex-col md:flex-row justify-center items-center  md:h-[23rem] pt-[4rem] h-auto">
+    <div class="contact-section w-[20rem] text-center md:text-justify">
+      <h3 class="font-medium text-2xl">About us</h3>
+      <p class="pt-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum.
+      </p>
+      <div class="footer-icons">
+        <a href="" class="flex gap-[1.5rem] text-2xl justify-center md:justify-start  mt-4">
+          <span><i class="fa-brands fa-facebook bg-white text-primary rounded-sm px-1 py-1  hover:text-blue-500"></i></span>
+          <span><i class="fa-brands fa-twitter bg-white text-primary rounded-sm px-1 py-1 hover:text-blue-500"></i></span>
+          <span><i class="fa-brands fa-instagram bg-white text-primary rounded-sm px-1.5 py-1 hover:text-blue-500"></i></span>
+          <span><i class="fa-brands fa-pinterest-p bg-white text-primary rounded-sm px-[7px] py-1 hover:text-blue-500"></i></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-section flex flex-col text-center md:text-justify gap-2 mt-5 md:m-0">
+      <h3 class="font-medium text-2xl text-white md:pb-3">Quick links</h3>
+      <p><a href="./index.html" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Home</a></p>
+      <p><a  href="./about.html" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">About Us</a></p>
+      <p><a href="./Products.html" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Our Products</a></p>
+     
+      
+    </div>
+
+    <div class="contact-section flex flex-col gap-2 text-center md:text-justify  mt-5 md:m-0">
+      <h3 class="font-medium text-2xl text-white md:pb-3">Our Service</h3>
+
+      <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">About Us</a></p>
+      <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Our Portfolio</a></p>
+      <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">Pricing Plan</a></p>
+    
+    </div>
+    <div class="contact-section text-white flex flex-col gap-2 text-center md:text-justify  mt-5 md:m-0">
+      <h3 class="font-medium text-2xl text-white md:pb-3">Contact</h3>
+
+      <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">A-21 Ram Nagar Ex,
+        Jaipur</a></p>
+      <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">shreeratanind@gmail.com</a></p>
+      <p><a href="" class="hover:underline underline-offset-2 transition-colors duration-500 ease-in-out">+91 9001979560</a></p>
+     
+    </div>
+  </div>
+<script src="./js/script.js"></script>
+ 
+</body>
+
+</html>
